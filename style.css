@@ -26,6 +26,7 @@ img {
 body {
   display: grid;
   place-content: center;
+  background-color: var(--clr-secondary-200);
 }
 
 .category {
@@ -50,6 +51,7 @@ body {
   width: 375px;
   border-radius: 15px 15px 0px 0px;
   overflow: hidden;
+  background-color: var(--clr-neutral-100);
 }
 
 .product__content {
