@@ -1,0 +1,98 @@
+:root {
+  --clr-primary-400: hsl(158, 36%, 37%);
+  --clr-secondary-200: hsl(30, 38%, 92%);
+
+  --clr-neutral-900: hsl(212, 21%, 14%);
+  --clr-neutral-400: hsl(228, 12%, 48%);
+  --clr-neutral-100: hsl(0, 0%, 100%);
+
+  --ff-main: "Fraunces", serif;
+  --ff-secondary: "Montserrat", sans-serif;
+
+  --fw-regulad: 500;
+  --fw-bold: 700;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  display: grid;
+  place-content: center;
+}
+
+.category {
+  font-family: var(--ff-secondary);
+  color: var(--clr-neutral-400);
+  font-size: 0.9rem;
+}
+.title {
+  font-family: var(--ff-main);
+  font-weight: bolder;
+}
+.description {
+  font-family: var(--clr-primary-400);
+  color: var(--clr-neutral-400);
+  line-height: 1.4rem;
+}
+
+.product {
+  display: grid;
+  overflow-wrap: break-word;
+  margin: 1rem;
+  width: 375px;
+  border-radius: 15px 15px 0px 0px;
+  overflow: hidden;
+}
+
+.product__content {
+  display: grid;
+  gap: 1.4rem;
+  padding: 1.2rem;
+  padding-top: 0.9rem;
+}
+
+.price_grid {
+  display: flex;
+  gap: 1.3rem;
+  align-items: center;
+  font-family: var(--ff-main);
+}
+.Curr_price {
+  font-size: 1.5rem;
+  color: var(--clr-primary-400);
+  font-weight: bolder;
+}
+
+.button {
+  color: var(--clr-secondary-200);
+  font-weight: bolder;
+  font-size: 0.9rem;
+  background-color: var(--clr-primary-400);
+  height: 2.8rem;
+  border: none;
+  border-radius: 10px;
+}
+
+.button:hover {
+  background-color: rgb(1, 83, 67);
+}
+
+@media (min-width: 600px) {
+  img {
+    border-radius: 15px 0px 0px 15px;
+  }
+  .product {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 700px;
+    overflow-wrap: break-word;
+  }
+}
